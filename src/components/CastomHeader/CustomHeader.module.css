@@ -1,0 +1,11 @@
+.title {
+    margin-bottom: 30px;
+    font-weight: 300;
+    color:#fff;
+    text-transform: capitalize;
+    /*background-color: cornflowerblue;*/
+}
+
+.title h2{
+    font-family: 'Josefin Sans', sans-serif;
+}

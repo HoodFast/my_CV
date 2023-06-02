@@ -1,10 +1,13 @@
 import React from 'react';
-import s from './Header.module.css';
+import s from './Nav.module.css';
 
-export const Header=()=> {
+export const Nav=()=> {
     return (
-        <div className={s.header}>
-
+        <div className={s.nav}>
+<a href=''>Главная</a>
+<a href=''>Скиллы</a>
+<a href=''>Проекты</a>
+<a href=''>Контакты</a>
         </div>
     );
 }

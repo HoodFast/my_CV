@@ -1,0 +1,11 @@
+.container{
+    width: 72%;
+    height: 100%;
+    border: 1px solid;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 5px;
+}

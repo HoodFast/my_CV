@@ -1,0 +1,10 @@
+.distant{
+    background-color: cornflowerblue;
+}
+
+
+.distantContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

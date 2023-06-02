@@ -1,0 +1,40 @@
+.work {
+    width: 350px;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0px 5px;
+}
+
+
+.imageContainer {
+    height: 300px;
+    width: 100%;
+    border: 1px solid;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descriptionBlock {
+    width: 90%;
+    text-align: start;
+}
+
+.title {
+    background-color: #a48894;
+    margin: 5px 0px 5px;
+}
+
+.description {
+    background-color: #82848a;
+}
+
+
+
+
+
+
+

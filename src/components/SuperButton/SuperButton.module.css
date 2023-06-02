@@ -1,0 +1,26 @@
+.button {
+    height: 50px;
+    background-color: #757975;
+    color: #000000;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 1px solid #505250;
+}
+
+.button:hover{
+    box-shadow: 0 0 0 1px #cbd6ee;
+}
+
+
+.button:disabled{
+    color: #443e3e;
+    background-color: #84a1bd;
+    box-shadow: 0 0 0 0px;
+    cursor: no-drop;
+}
