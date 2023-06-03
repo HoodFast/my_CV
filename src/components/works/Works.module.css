@@ -1,5 +1,5 @@
 .worksBlock {
-min-height: 100vh;
+    min-height: 100vh;
     background-color: #1f1f20;
 }
 
@@ -11,14 +11,13 @@ min-height: 100vh;
 
 }
 
-
-
 .works {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 
 @media screen and (max-width: 974px) {
     .works {

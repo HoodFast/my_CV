@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Works.module.css';
 import sc from '../../common/styles/Container.module.css';
 import {Work} from "./work/work";
-import {CustomHeader} from "../CastomHeader/CustomHeader";
+import {CustomHeader} from "../../common/commonComponents/CastomHeader/CustomHeader";
 
 
 export const Works = () => {
