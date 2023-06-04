@@ -10,7 +10,6 @@
 
 .title h2 {
     font-size: 36px;
-
 }
 
 .title::after {
@@ -21,7 +20,6 @@
     height: 1px;
     bottom: 0;
     left:50%;
-    transform: translate(-50%,50%);
-
+    transform: translate(-50%,50%)
 }
 

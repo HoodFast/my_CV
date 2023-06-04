@@ -7,7 +7,7 @@ type WorkPropsType = {
     disabled: boolean
     image: string
     title: string
-    titleButton:string
+    titleButton: string
     description: string
 }
 
@@ -20,13 +20,23 @@ export const Work: React.FC<WorkPropsType> = ({
                                               }) => {
     return (
         <div className={s.work}>
+
             <div className={s.imageContainer}>
-                <SuperButton titleButton={titleButton} disabled={disabled} callback={()=>{window.location.href = 'https://www.yandex.ru'}}/>
+                <img src={image} alt=""/>
+                <div className={s.buttonImg}>
+                    <SuperButton titleButton={titleButton} disabled={disabled} callback={() => {
+                        window.location.href = 'https://www.yandex.ru'}}/>
+                </div>
+
             </div>
 
             <div className={s.descriptionBlock}>
-                <div className={s.title}>{title}</div>
-                <div className={s.description}>{description}</div>
+                <h3>{title}</h3>
+                <span className={s.description}>{description}</span>
+                <p>
+                    <a href={''}>READ MORE</a>
+                </p>
+
             </div>
 
         </div>

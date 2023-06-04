@@ -1,39 +1,74 @@
 .work {
-    width: 350px;
-    background-color: cornflowerblue;
+    max-width: 40%;
+    min-width: 300px;
+    background-color: #252527;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 5px 0px 5px;
+    /*align-items: center;*/
+    margin: 15px 15px 15px;
 }
+
 
 
 .imageContainer {
-    height: 300px;
-    width: 100%;
-    border: 1px solid;
-    background-color: cornflowerblue;
+    /*max-height: 300px;*/
+    max-width: 100%;
+    max-height: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.imageContainer img{
+    width: 100%;
+    position: relative;
+    max-height: 460px;
+    object-fit: contain;
+
 }
 
 .descriptionBlock {
-    width: 90%;
+    /*width: 90%;*/
     text-align: start;
+    padding: 25px 20px;
 }
 
-.title {
-    background-color: #a48894;
-    margin: 5px 0px 5px;
+.WorkTitle {
+
 }
 
 .description {
-    background-color: #82848a;
+    font: 400 40px/1.2 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #fff;
+    background-color: #252527;
 }
 
+.descriptionBlock a {
+    font: 700 40px/1.2 'Josefin Sans', sans-serif;
+    font-size: small;
+    position: relative;
+    text-transform: uppercase;
+    margin-top: 10px;
+    display: inline-block;
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+}
 
+.descriptionBlock h3 {
+    font: 700 40px/1.2 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+}
 
+.buttonImg{
+    position: absolute;
+}
 
 
 
