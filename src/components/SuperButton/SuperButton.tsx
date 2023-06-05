@@ -1,4 +1,4 @@
-import s from './SuperButton.module.css'
+import s from './SuperButton.module.scss'
 import React from "react";
 
 

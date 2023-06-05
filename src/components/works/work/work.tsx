@@ -1,11 +1,11 @@
 import React from 'react';
-import s from './Work.module.css';
+import s from './Work.module.scss';
 import {SuperButton} from "../../SuperButton/SuperButton";
 
 
 type WorkPropsType = {
     disabled: boolean
-    image: string
+    style: any
     title: string
     titleButton: string
     description: string
@@ -13,23 +13,20 @@ type WorkPropsType = {
 
 export const Work: React.FC<WorkPropsType> = ({
                                                   disabled,
-                                                  image,
+                                                  style,
                                                   title,
                                                   titleButton,
                                                   description
                                               }) => {
     return (
         <div className={s.work}>
-
-            <div className={s.imageContainer}>
-                <img src={image} alt=""/>
-                <div className={s.buttonImg}>
+            <div style={style} className={s.imageContainer}>
+                <div  className={s.buttonImg}>
                     <SuperButton titleButton={titleButton} disabled={disabled} callback={() => {
                         window.location.href = 'https://www.yandex.ru'}}/>
                 </div>
 
             </div>
-
             <div className={s.descriptionBlock}>
                 <h3>{title}</h3>
                 <span className={s.description}>{description}</span>
@@ -38,7 +35,6 @@ export const Work: React.FC<WorkPropsType> = ({
                 </p>
 
             </div>
-
         </div>
     );
 }

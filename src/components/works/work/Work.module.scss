@@ -1,0 +1,72 @@
+@import "../../../common/styles/sass/variables";
+@import "../../../common/styles/sass/mixins";
+
+
+.work {
+  max-width: 40%;
+  min-width: 300px;
+  background-color: $bgSecondColor;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 15px 15px;
+
+  .imageContainer {
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    max-height: 360px;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: black;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 30%;
+    }
+
+    .buttonImg {
+      position: relative;
+    }
+  }
+
+  .descriptionBlock {
+    text-align: start;
+    padding: 25px 20px;
+
+    & a {
+      @include text('Josefin Sans', 700, small, 1.2);
+      position: relative;
+      text-transform: uppercase;
+      margin-top: 10px;
+      display: inline-block;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    & h3 {
+      @include text('Josefin Sans',700,medium,1.2);
+      letter-spacing: 1px;
+    }
+
+    .description {
+      @include text('Poppins',400,12px,1.8);
+      background-color: $bgSecondColor;
+    }
+  }
+}
+
+
+
+
+
+
+
+
