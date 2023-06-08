@@ -1,0 +1,28 @@
+.mainHeader{
+    position: relative;
+}
+
+.layers{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #131111;
+}1
+.layers::before{
+    height: 30vh;
+    width: 100%;
+}
+
+.layer{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.layer1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
