@@ -1,0 +1,56 @@
+@import "../../../common/styles/sass/variables";
+@import "../../../common/styles/sass/mixins";
+
+
+.skill {
+  width: 350px;
+  height: 350px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  border: 0 solid;
+  border-radius: 20px;
+  box-shadow: 0 0 60px #c9c9c9;
+  padding: 10px;
+  margin: 15px;
+  box-sizing: border-box;
+  .icon {
+    height: 60px;
+    width: 60px;
+    background-color: cornflowerblue;
+  }
+  & h3 {
+
+  }
+
+  &:hover {
+    background-color: #676cdb;
+    color: white;
+    .description{
+      color: white;
+    }
+    & h3{
+      color: white;
+    }
+  }
+
+
+
+  .title {
+    @include text('Rubik', 500, 24px, 1.2);
+    color: black;
+    margin-left: 25px;
+  }
+
+  .description {
+    @include text('Rubik', 300, 18px, 1.2);
+    margin-left: 25px;
+    color: $textThirdColor;
+  }
+
+}
+
+
+

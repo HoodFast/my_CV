@@ -13,6 +13,7 @@ function App() {
         <div className="App">
             <Header/>
             <Main/>
+            {/*<ParallaxEffect/>*/}
             <Skills/>
             <Works/>
             <Distant/>

@@ -8,7 +8,7 @@ type CustomHeaderType = {
 }
 export const Title: React.FC<CustomHeaderType> = ({title}) => {
     return <div className={s.title}>
-        <h2>{title}</h2>
+        <p>{title}</p>
     </div>
 
 }

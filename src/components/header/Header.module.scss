@@ -1,8 +1,13 @@
+@import "../../common/styles/sass/variables";
+
 .header {
-    height: 80px;
-    background-color: cornflowerblue;
+    height: 10vh;
+    background-color: $bgColor;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 

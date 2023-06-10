@@ -1,6 +1,10 @@
+@import "../../common/styles/sass/variables.scss";
+
 .skillsBlock {
     min-height: 100vh;
-    background-color: #413e3e;
+    background-color: $bgSecondColor;
+    z-index: 2;
+    margin: 120px 0 0;
 }
 
 .skillsContainer {
@@ -13,6 +17,12 @@
 .skills {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5px;
     flex-wrap: wrap;
+}
+
+.icons {
+   font-size: 80px;
+    margin: 20px;
 }

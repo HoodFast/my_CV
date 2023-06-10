@@ -1,28 +1,51 @@
-.mainHeader{
-    position: relative;
+@import "../../common/styles/sass/variables.scss";
+@import "../../common/styles/sass/mixins";
+
+.mainHeader {
+  position: relative;
+  z-index: 1;
 }
 
-.layers{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #131111;
-}1
-.layers::before{
-    height: 30vh;
-    width: 100%;
+.layers {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $bgSecondColor;
+  background-size: cover;
 }
 
-.layer{
-    height: 100%;
-    width: 100%;
-    position: absolute;
+
+.layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  background-size: cover;
 }
-.layer1{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-size: cover;
-    background-position: center;
+
+.layer1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
 }
+
+.layerCaption{
+  position: absolute;
+  z-index: 3;
+  @include text('Josefin Sans', 700, 25, 1.2);
+  color:$textColor ;
+  transform: translate(-50%,50%)
+}
+
+//.fakeDiv {
+//  position: relative;
+//  background-color: $bgSecondColor;
+//  height: 200px;
+//  width: 100%;
+//  z-index: 1;
+//}

@@ -1,6 +1,25 @@
+@import "../../common/styles/sass/mixins";
+@import "../../common/styles/sass/variables";
+
 .nav {
-    border: 1px solid;
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
+
+  & a {
+    @include text('Rubik', 500, 18px, 1.2);
+    margin: 0 15px 0;
+    text-decoration: none
+  }
+  .active {
+    color: $primaryColor;
+    position: relative;
+
+    &::after {
+      width: 0.6vw;
+      height: 0.6vh;
+      background-color: $primaryColor;
+      position: absolute;
+      content: "";
+      border: 1px solid $primaryColor;
+      border-radius: 2px;
+    }
+  }
 }

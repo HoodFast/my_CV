@@ -1,26 +1,25 @@
 @import "../../styles/sass/variables";
-
+@import "../../../common/styles/sass/mixins";
 .title {
-    margin: 0 0 30px;
-    font: 300 40px/1.2 'Josefin Sans', sans-serif;
-    font-weight: lighter;
-    color: $textColor;
+    margin: 0 0 5px;
+    @include text('Rubik', 300, 22px, 1.2);
+    color: $primaryColor;
     text-transform: capitalize;
     letter-spacing: 5px;
     position: relative;
-    & h2 {
-        font-size: 36px;
+    & h4 {
+        font-size: 22px;
     }
-    &::after {
-        content: "";
-        position: absolute;
-        background: $primaryColor;
-        width: 55px;
-        height: 1px;
-        bottom: 0;
-        left:50%;
-        transform: translate(-50%,50%)
-    }
+    //&::after {
+    //    content: "";
+    //    position: absolute;
+    //    background: $primaryColor;
+    //    width: 55px;
+    //    height: 1px;
+    //    bottom: 0;
+    //    left:50%;
+    //    transform: translate(-50%,50%)
+    //}
 }
 
 
