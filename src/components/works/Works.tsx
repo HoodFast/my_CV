@@ -6,6 +6,7 @@ import {Title} from "../../common/commonComponents/title/Title";
 import work1img from '../../assets/blog1.jpg'
 import work2img from '../../assets/blog2.jpg'
 
+
 export const Works = () => {
     const work1={
         backgroundImage:`url(${work1img})`
@@ -14,7 +15,8 @@ export const Works = () => {
         backgroundImage:`url(${work2img})`
     }
     return (
-        <div className={s.worksBlock}>
+
+        <div id="works" className={s.worksBlock}>
             <div className={`${sc.container}   ${s.worksContainer}`}>
                 <Title title={'My Works'}/>
                 <div className={s.works}>

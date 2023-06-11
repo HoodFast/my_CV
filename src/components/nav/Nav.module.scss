@@ -2,11 +2,15 @@
 @import "../../common/styles/sass/variables";
 
 .nav {
-
-  & a {
+display: flex;
+  & p {
     @include text('Rubik', 500, 18px, 1.2);
     margin: 0 15px 0;
     text-decoration: none
+  }
+  :hover{
+    cursor: pointer;
+    color: red;
   }
   .active {
     color: $primaryColor;

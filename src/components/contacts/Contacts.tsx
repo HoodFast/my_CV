@@ -3,7 +3,7 @@ import sc from "../../common/styles/Container.module.css";
 import {SuperButton} from "../SuperButton/SuperButton";
 
 export const Contacts = () => {
-    return <div className={s.contactsBlock}>
+    return <div id='contacts' className={s.contactsBlock}>
         <div className={`${sc.container} ${s.contactsContainer}`}>
             <h3>Контакты</h3>
             <form className={s.form}>

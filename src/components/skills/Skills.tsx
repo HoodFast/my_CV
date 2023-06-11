@@ -9,7 +9,7 @@ import {GithubOutlined, Html5Outlined} from "@ant-design/icons";
 export const Skills = () => {
     const description = 'Html5 - это последняя версия языка гипертекстовой разметки HTML, предназначенная для создания веб-страниц с улучшенной функциональностью.'
     return (
-        <div className={s.skillsBlock}>
+        <div id='skills' className={s.skillsBlock}>
             <div className={`${sc.container}   ${s.skillsContainer}`}>
                 <Title title={'My skills'}/>
                 <div className={s.skills}>
