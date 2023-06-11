@@ -1,0 +1,78 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.contactsBlock {
+  min-height: 60vh;
+  background-color: $bgSecondColor;
+
+  .contactsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+
+    .formContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 20px;
+      min-width: 40%;
+      min-height: 45vh;
+      border: 0;
+      border-radius: 20px;
+      background-color: $primaryColor;
+      padding: 100px 50px 50px;
+
+      .form {
+        display: flex;
+        flex-direction: column;
+
+        .input {
+          height: 53px;
+          margin: 0 0 40px;
+          padding: 15px;
+          color: $textColor;
+          background-color: $primaryColor;
+          border: 0;
+          position: relative;
+          border-bottom: 1.5px solid #a6a6a6;
+
+          &::placeholder {
+            @include text('Rubik', 300, 24px, 1.2);
+            color: $textColor;
+          }
+
+        }
+
+        .textarea {
+          border: 0;
+          border-bottom: 1.5px solid #a6a6a6;
+          height: 75px;
+          margin: 0 0 40px;
+          padding: 15px;
+          background-color: $primaryColor;
+
+          &::placeholder {
+            @include text('Rubik', 300, 24px, 1.2);
+            color: $textColor;
+          }
+        }
+
+      }
+
+      .button {
+        align-self: center;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1336px) {
+  .formContainer {
+    width: 100%;
+
+  }
+}
+
+

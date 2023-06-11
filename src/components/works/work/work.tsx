@@ -22,12 +22,13 @@ export const Work: React.FC<WorkPropsType> = ({
         <div className={s.work}>
             <div style={style} className={s.imageContainer}>
                 <div  className={s.buttonImg}>
-                    <SuperButton titleButton={titleButton} disabled={disabled} callback={() => {
-                        window.location.href = 'https://www.yandex.ru'}}/>
+                    {/*<SuperButton titleButton={titleButton} disabled={disabled} callback={() => {*/}
+                    {/*    window.location.href = 'https://www.yandex.ru'}}/>*/}
                 </div>
 
             </div>
             <div className={s.descriptionBlock}>
+                <span className={s.notes}>Social Network</span>
                 <h3>{title}</h3>
                 <span className={s.description}>{description}</span>
                 <p>

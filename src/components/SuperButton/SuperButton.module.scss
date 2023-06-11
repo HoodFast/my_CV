@@ -1,29 +1,38 @@
 @import "../../common/styles/sass/variables.scss";
+@import "../../common/styles/sass/mixins";
 
 .button {
-    font: 400 40px/1.2 'Poppins', sans-serif;
-    height: 50px;
-    background-color: $bgSecondColor;
-    color: $textColor;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border: 0px;
+  @include text('Rubik', 500, 22px, 1.2);
+  height: 50px;
+  width: 200px;
+  background-color: #b2b2b2;
+  color: $primaryColor;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  //transition-duration: 0.4s;
+  transition: all 1s cubic-bezier(0.535, 1.595, 1.000, -0.575);
+  cursor: pointer;
+  border: 0px;
+  border-radius: 50px;
 
-    &:hover{
-        box-shadow: 0 0 0 1px $primaryColor;
-    }
-    &:disabled{
-        color: #443e3e;
-        background-color: #84a1bd;
-        box-shadow: 0 0 0 0px;
-        cursor: no-drop;
-    }
+
+  &:hover {
+    letter-spacing: 1px;
+    box-shadow: 0 0 0 2px $primaryColor;
+    color: $textColor;
+    //background-color: $textThirdColor;
+  }
+
+  &:disabled {
+    color: #443e3e;
+    background-color: #84a1bd;
+    box-shadow: 0 0 0 0px;
+    cursor: no-drop;
+  }
 }
 
 

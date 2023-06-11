@@ -21,7 +21,10 @@ export const Skill: React.FC<SkillsPropsType> = ({
             {children}
             {/*<img className={s.icon} src={icon} alt="skill icon"/>*/}
             <h3 className={s.title}>{title}</h3>
+
             <span className={s.description}>{description}</span>
+
+
         </div>
     );
 }

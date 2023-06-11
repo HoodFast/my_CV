@@ -34,6 +34,13 @@ export const Works = () => {
                         titleButton={'Push'}
                         description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'}
                     />
+                    <Work
+                        disabled={false}
+                        style={work2}
+                        title={'The single greatest gift to get your friend who always travels'}
+                        titleButton={'Push'}
+                        description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'}
+                    />
                 </div>
             </div>
         </div>

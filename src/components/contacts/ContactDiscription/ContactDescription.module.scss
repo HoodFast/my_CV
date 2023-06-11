@@ -1,0 +1,35 @@
+@import "../../../common/styles/sass/variables";
+@import "../../../common/styles/sass/mixins";
+
+
+
+.descriptionContainer{
+  width: 40%;
+  padding: 20px;
+  span{
+    margin-bottom: 5px;
+    @include text('Rubik', 300, 22px, 1.2);
+    color: $primaryColor;
+  }
+  h2{
+    @include text('Rubik', 700, 48px, 1.2);
+    margin: 0 0 35px;
+    color: $textSecondColor;
+  }
+  h4{
+    margin: 0;
+    @include text('Rubik', 700, 22px, 1.2);
+    color: $textSecondColor;
+  }
+  p{
+    margin: 0 0 15px;
+    @include text('Rubik', 400, 18px, 1.2);
+    color: $textThirdColor;
+  }
+}
+
+@media screen and (max-width: 1336px) {
+  .descriptionContainer {
+    width: 100%;
+  }
+}

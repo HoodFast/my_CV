@@ -3,23 +3,30 @@
 
 
 .work {
-  width: 40vw;
+  width: 450px;
 
   background-color: $bgSecondColor;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: 15px 15px 15px;
-
+  position: relative;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 60px #c9c9c9;
   .imageContainer {
     background-size: cover;
     background-position: center;
-    max-width: 100%;
-    max-height: 360px;
+    width: 100%;
+    max-height: 160px;
     min-height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    border: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 
     &::before {
       position: absolute;
@@ -30,6 +37,9 @@
       left: 0;
       right: 0;
       opacity: 30%;
+      border: 0;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
     }
 
     .buttonImg {
@@ -37,28 +47,37 @@
     }
   }
 
+  .notes {
+    @include text('Rubik', 300, 24px, 1.2);
+    color: $primaryColor;
+
+  }
+
   .descriptionBlock {
     text-align: start;
     padding: 25px 20px;
 
     & a {
-      @include text('Josefin Sans', 700, small, 1.2);
+      @include text('Rubik', 500, 24px, 1.2);
       position: relative;
       text-transform: uppercase;
       margin-top: 10px;
       display: inline-block;
       background-color: transparent;
       text-decoration: none;
+      color: $textSecondColor;
     }
 
     & h3 {
-      @include text('Josefin Sans',700,medium,1.2);
+      @include text('Rubik', 500, 24px, 1.2);
       letter-spacing: 1px;
+      color: $textSecondColor;
     }
 
     .description {
-      @include text('Poppins',400,12px,1.8);
-      background-color: $bgSecondColor;
+      @include text('Rubik', 500, 24px, 1.2);
+      //background-color: $bgSecondColor;
+      color: $textThirdColor;
     }
   }
 }
