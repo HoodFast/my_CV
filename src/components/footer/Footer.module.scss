@@ -1,0 +1,38 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+
+.footerBlock {
+  background-color: $primaryColor;
+
+  .footerContainer {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    h4 {
+      @include text('Rubik', 300, 24px, 1.2);
+      margin: 15px 0 0;
+      color: $textSecondColor;
+    }
+
+    .imageBlock {
+      display: flex;
+      width: 70%;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .icons {
+        margin: 20px;
+        font-size: 50px;
+        color: white;
+      }
+    }
+  }
+}
+
+
+
+
+
+

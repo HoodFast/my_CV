@@ -5,6 +5,7 @@ import {useResize} from "../../utils/useResize/useResize";
 import {createFromIconfontCN, TwitterOutlined} from "@ant-design/icons";
 import {Space} from "antd";
 import IconFont from '@ant-design/icons/lib/components/IconFont';
+import imgLayer1 from '../../assets/IMG_20200601_230751.png';
 
 
 export const Main: React.FC = () => {
@@ -15,6 +16,7 @@ export const Main: React.FC = () => {
     const IconFont = createFromIconfontCN({
         scriptUrl: '//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js',
     });
+    const image1 = {backgroundImage: `url(${imgLayer1})`}
     return (
 
         <div id='main' className={s.mainBlock}>
@@ -37,8 +39,13 @@ export const Main: React.FC = () => {
                     </Space>
                 </div>
 
+
                 {/*<div className={s.containerPhoto}>*/}
-                <div className={s.photo}></div>
+                <div  className={s.photo}>
+                    <div style={image1} className={s.imageStyle} >
+
+                    </div>
+                </div>
                 {/*</div>*/}
 
             </div>

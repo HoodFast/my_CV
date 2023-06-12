@@ -53,11 +53,26 @@
       min-width: 300px;
       height: 100%;
       background-color: $primaryColor;
+      position: relative;
+
+      .imageStyle {
+        background-position: center;
+        background-size: cover;
+        display: block;
+        position: absolute;
+        opacity: 95%;
+        bottom: 0;
+        width: 305px;
+        height: 380px;
+        z-index: 50;
+
+      }
     }
 
     .icons {
       margin-top: 40px;
       justify-content: space-between;
+
       .icon {
         font-size: 40px;
         color: white;
@@ -73,12 +88,16 @@
       .photo {
         min-width: 70px;
         //transform: translate(100%);
+        .imageStyle {
+          display: none;
+        }
       }
       .textContainer {
         .text {
           & h1 {
             font-size: 2.5rem;
           }
+
           & button {
             width: 55px;
           }

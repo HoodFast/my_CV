@@ -2,28 +2,44 @@
 @import "../../common/styles/sass/mixins";
 
 .button {
+  position: relative;
   @include text('Rubik', 500, 22px, 1.2);
   height: 50px;
-  width: 200px;
-  background-color: #b2b2b2;
-  color: $primaryColor;
-  padding: 16px 32px;
+  min-width: 200px;
+  background-color: $primaryColor;
+  color: $textColor;
+
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
-  //transition-duration: 0.4s;
-  transition: all 1s cubic-bezier(0.535, 1.595, 1.000, -0.575);
+
+  transition-duration: 0.4s;
+  //transition: all 1s cubic-bezier(0.535, 1.595, 1.000, -0.575);
   cursor: pointer;
-  border: 0px;
+  border: 0;
   border-radius: 50px;
 
+  &::before {
+    content: '';
+    height: 10px;
+    width: 20px;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    left: 50%;
+    transform: translate(-50%, 50%)
+  }
 
   &:hover {
-    letter-spacing: 1px;
-    box-shadow: 0 0 0 2px $primaryColor;
-    color: $textColor;
+    letter-spacing: 7px;
+
+
+    &::before {
+      transition-duration: 0.4s;
+      height: 1px;
+      width: 150px;
+    }
     //background-color: $textThirdColor;
   }
 

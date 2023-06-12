@@ -17,8 +17,8 @@ function App() {
             <Main/>
             <Header/>
             <Skills/>
-            <Works/>
             <Distant/>
+            <Works/>
             <Contacts/>
             <Footer/>
         </div>
