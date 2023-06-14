@@ -45,6 +45,12 @@
           border-radius: 55px;
           background-color: $primaryColor;
           margin-top: 40px;
+          transition-duration: 0.4s;
+        }
+        :hover{
+          background-color: $bgColor;
+          cursor: pointer;
+          color: $primaryColor;
         }
       }
     }
@@ -101,6 +107,7 @@
           & button {
             width: 55px;
           }
+
         }
       }
     }

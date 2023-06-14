@@ -6,6 +6,7 @@ import {createFromIconfontCN, TwitterOutlined} from "@ant-design/icons";
 import {Space} from "antd";
 import IconFont from '@ant-design/icons/lib/components/IconFont';
 import imgLayer1 from '../../assets/IMG_20200601_230751.png';
+import {IconsBlock} from "../IconsBlock/IconsBlock";
 
 
 export const Main: React.FC = () => {
@@ -42,6 +43,7 @@ export const Main: React.FC = () => {
 
                 {/*<div className={s.containerPhoto}>*/}
                 <div  className={s.photo}>
+                    <IconsBlock/>
                     <div style={image1} className={s.imageStyle} >
 
                     </div>

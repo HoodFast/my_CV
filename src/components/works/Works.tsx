@@ -5,14 +5,18 @@ import {Work} from "./work/work";
 import {Title} from "../../common/commonComponents/title/Title";
 import work1img from '../../assets/blog1.jpg'
 import work2img from '../../assets/blog2.jpg'
+import work3img from '../../assets/AnimalShelter.jpg'
 
 
 export const Works = () => {
-    const work1={
-        backgroundImage:`url(${work1img})`
+    const work1 = {
+        backgroundImage: `url(${work1img})`
     }
-    const work2={
-        backgroundImage:`url(${work2img})`
+    const work2 = {
+        backgroundImage: `url(${work2img})`
+    }
+    const work3 = {
+        backgroundImage: `url(${work3img})`
     }
     return (
 
@@ -21,24 +25,22 @@ export const Works = () => {
                 <Title title={'My Works'}/>
                 <div className={s.works}>
                     <Work
-                        disabled={false}
+                        name={'Social Network'}
                         style={work1}
-                        title={'10 tips for drawing with coloured pencils'}
-                        titleButton={'Go  to Yandex'}
+                        title={'Учебный проект функциональной социальной сети'}
                         description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'}
                     />
                     <Work
-                        disabled={false}
+                        name={'ToDo List'}
                         style={work2}
-                        title={'The single greatest gift to get your friend who always travels'}
-                        titleButton={'Push'}
+                        title={'TodoList - список дел для организации работы и жизни'}
+
                         description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'}
                     />
                     <Work
-                        disabled={false}
-                        style={work2}
-                        title={'The single greatest gift to get your friend who always travels'}
-                        titleButton={'Push'}
+                        name={'Animal Shelter'}
+                        style={work3}
+                        title={'Спасая одну жизнь вы спасаете целый мир'}
                         description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'}
                     />
 
