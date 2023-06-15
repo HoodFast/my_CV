@@ -18,8 +18,14 @@ export const Skill: React.FC<SkillsPropsType> = ({
                                                  }) => {
     return (
         <div className={s.skill}>
-            {children}
-            <h3 className={s.title}>{title}</h3>
+            <div className={s.iconsBlock}>
+                <div className={s.children}>
+                    {children}
+                </div>
+
+                <h3 className={s.title}>{title}</h3>
+            </div>
+
             <span className={s.description}>{description}</span>
         </div>
     );

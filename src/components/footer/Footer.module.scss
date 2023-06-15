@@ -11,7 +11,7 @@
     flex-wrap: wrap;
 
     h4 {
-      @include text('Rubik', 300, 24px, 1.2);
+      @include text('Rubik', 500, 24px, 1.2);
       margin: 15px 0 0;
       color: $textSecondColor;
     }
@@ -21,7 +21,7 @@
 
     .imageBlock {
       display: flex;
-      width: 70%;
+      width: 50%;
       justify-content: center;
       flex-wrap: wrap;
 
@@ -29,6 +29,11 @@
         margin: 20px;
         font-size: 50px;
         color: white;
+        transition-duration: 0.4s;
+        &:hover{
+          color: $textSecondColor;
+          cursor: pointer;
+        }
       }
     }
   }

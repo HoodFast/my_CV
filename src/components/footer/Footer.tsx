@@ -1,7 +1,8 @@
 import s from './Footer.module.scss'
 import sc from "../../common/styles/Container.module.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faInstagram, faJava, faVk, faYoutube} from '@fortawesome/free-brands-svg-icons'
+import {faInstagram, faJava, faMailchimp, faVk, faYoutube} from '@fortawesome/free-brands-svg-icons'
+import {faEnvelope} from '@fortawesome/free-regular-svg-icons'
 
 export const Footer = () => {
     return <div className={s.footerBlock}>
@@ -10,7 +11,7 @@ export const Footer = () => {
             <div className={s.imageBlock}>
 
 
-                <FontAwesomeIcon className={s.icons} icon={faJava}/>
+                <FontAwesomeIcon className={s.icons} icon={faEnvelope}/>
                 <FontAwesomeIcon className={s.icons} icon={faYoutube}/>
                 <FontAwesomeIcon className={s.icons} icon={faVk}/>
                 <FontAwesomeIcon className={s.icons} icon={faInstagram}/>

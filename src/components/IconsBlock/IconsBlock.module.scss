@@ -1,3 +1,6 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
 
 .iconsBlock {
   display: flex;
@@ -9,6 +12,11 @@
     margin: 5px;
     font-size: 25px;
     color: white;
+    transition-duration: 0.4s;
+    &:hover{
+      color: $textSecondColor;
+      cursor: pointer;
+    }
   }
 
 

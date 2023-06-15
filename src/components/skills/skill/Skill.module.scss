@@ -19,10 +19,20 @@
   box-sizing: border-box;
   position: relative;
   transition-duration: 0.4s;
-  .icon {
-    height: 50px;
-    width: 50px;
-    background-color: cornflowerblue;
+
+  .iconsBlock {
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    margin: 10px;
+    .children {
+
+    }
+
+    h3 {
+      margin: 0;
+      padding: 0;
+    }
   }
 
   & h3 {
@@ -31,18 +41,18 @@
   }
 
 
-  &:hover {
-    background-color: #676cdb;
-    color: white;
-
-    .description {
-      color: white;
-    }
-
-    & h3 {
-      color: white;
-    }
-  }
+  //&:hover {
+  //  background-color: #676cdb;
+  //  color: white;
+  //
+  //  .description {
+  //    color: white;
+  //  }
+  //
+  //  & h3 {
+  //    color: white;
+  //  }
+  //}
 
 
   .title {

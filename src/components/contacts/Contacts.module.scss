@@ -41,7 +41,14 @@
             @include text('Rubik', 300, 24px, 1.2);
             color: $textColor;
           }
+        }
 
+        @media screen and (max-width: 376px) {
+          .input {
+            &::placeholder {
+              @include text('Rubik', 300, 14px, 1.2);
+            }
+          }
         }
 
         .textarea {
@@ -58,13 +65,22 @@
           }
         }
 
+        @media screen and (max-width: 376px) {
+          .textarea {
+            &::placeholder {
+              @include text('Rubik', 300, 14px, 1.2);
+            }
+          }
+        }
       }
+
 
       .button {
         align-self: center;
       }
     }
   }
+
 }
 
 
