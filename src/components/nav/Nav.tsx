@@ -1,24 +1,26 @@
 import React, {useState} from 'react';
 import s from './Nav.module.scss';
+import {Link, animateScroll as scroll} from "react-scroll";
+
 
 
 export const Nav = () => {
     const [active,setActive]=useState('main')
     const handleClickScroll = (name:string) => {
-        const element = document.getElementById(name);
-        if (element) {
-            element.scrollIntoView({behavior: 'smooth'});
-            setActive(name)
-        }
-
-
+        setActive(name)
+        // const element = document.getElementById(name);
+        // if (element) {
+        //     element.scrollIntoView({behavior: 'smooth'});
+        //
+        // }
     };
+    const offset = -100
     return (
         <div className={s.nav}>
-            <p onClick={()=>handleClickScroll('main')} className={active==='main'?s.active:''}>Main</p>
-            <p onClick={()=>handleClickScroll('skills')} className={active==='skills'?s.active:''}>Skills</p>
-            <p onClick={()=>handleClickScroll('works')} className={active==='works'?s.active:''}>Projects</p>
-            <p onClick={()=>handleClickScroll('contacts')} className={active==='contacts'?s.active:''}>Contacts</p>
+            <Link to="main" spy={true} smooth={true} activeClass={s.active}>Main</Link>
+            <Link to="skills" spy={true} smooth={true} activeClass={s.active} offset={offset}>Skills</Link>
+            <Link to="works" spy={true} smooth={true} activeClass={s.active} offset={offset}>Projects</Link>
+            <Link to="contacts" spy={true} smooth={true} activeClass={s.active} offset={offset} >Contacts</Link>
         </div>
     );
 }

@@ -3,7 +3,7 @@ import s from './Skills.module.scss';
 import sc from '../../common/styles/Container.module.css';
 import {Skill} from "./skill/Skill";
 import {Title} from "../../common/commonComponents/title/Title";
-import {GithubOutlined, Html5Outlined} from "@ant-design/icons";
+import { Fade } from "react-awesome-reveal";
 import {
     faChrome,
     faCss3,
@@ -22,8 +22,11 @@ export const Skills = () => {
     return (
         <div id='skills' className={s.skillsBlock}>
             <div className={`${sc.container}   ${s.skillsContainer}`}>
-                <Title title={'My skills'}/>
+
+                    <Title title={'My skills'}/>
+
                 <div className={s.skills}>
+                    <Fade  cascade={true} damping={0.05} delay={-2}>
                     <Skill title={'Html5'} description={description}>
                         <FontAwesomeIcon className={s.icons} icon={faHtml5}/>
                     </Skill>
@@ -43,6 +46,7 @@ export const Skills = () => {
 
                         <FontAwesomeIcon className={s.icons} icon={faChrome}/>
                     </Skill>
+                    </Fade>
                 </div>
             </div>
 

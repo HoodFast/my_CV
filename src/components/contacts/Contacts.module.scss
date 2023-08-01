@@ -2,8 +2,13 @@
 @import "../../common/styles/sass/mixins";
 
 .contactsBlock {
-  min-height: 60vh;
+  min-height: 80vh;
   background-color: $bgSecondColor;
+
+  .titleContainer {
+    display: flex;
+    justify-content: center;
+  }
 
   .contactsContainer {
     display: flex;

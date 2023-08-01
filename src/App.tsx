@@ -7,6 +7,7 @@ import {Works} from "./components/works/Works";
 import {Distant} from "./components/distant/Distant";
 import {Contacts} from "./components/contacts/Contacts";
 import {Footer} from "./components/footer/Footer";
+import ReactTypingEffect from "react-typing-effect";
 
 function App() {
 
@@ -14,14 +15,16 @@ function App() {
     return (
 
         <div className="App">
-            <Main/>
-            <Header/>
-            <Skills/>
-            <Distant/>
-            <Works/>
-            <Contacts/>
-            <Footer/>
+                <Main/>
+                <Header/>
+                <Skills/>
+                <Distant/>
+                <Works/>
+                <Contacts/>
+                <Footer/>
         </div>
+
+
     );
 }
 

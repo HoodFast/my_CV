@@ -7,6 +7,15 @@ import {Space} from "antd";
 import IconFont from '@ant-design/icons/lib/components/IconFont';
 import imgLayer1 from '../../assets/IMG_20200601_230751.png';
 import {IconsBlock} from "../IconsBlock/IconsBlock";
+import {TypingEffect} from "../../common/commonComponents/TypingEffect/TypingEffect";
+
+
+
+
+
+
+
+
 
 
 export const Main: React.FC = () => {
@@ -27,6 +36,8 @@ export const Main: React.FC = () => {
                         <h1>
                             I am Andrey {isScreenSm && 'Kuznetsov'}
                         </h1>
+
+                        <TypingEffect text={'Frontend Developer.'}/>
                         <p>
                             Front-end программирование на Java-script – это интересная и динамичная профессия, которая
                             требует от разработчика постоянного обучения и совершенствования.

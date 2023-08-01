@@ -2,12 +2,17 @@ import s from './Contacts.module.scss'
 import sc from "../../common/styles/Container.module.css";
 import {SuperButton} from "../SuperButton/SuperButton";
 import {ContactDescription} from "./ContactDiscription/ContactDescription";
+import {Title} from "../../common/commonComponents/title/Title";
+import React from "react";
 
 
 export const Contacts = () => {
     return <div id='contacts' className={s.contactsBlock}>
-
+        <div className={s.titleContainer}>
+            <Title title={'My contacts'}/>
+        </div>
         <div className={`${sc.container} ${s.contactsContainer}`}>
+
             <ContactDescription/>
             <div className={s.formContainer}>
                 <form className={s.form}>

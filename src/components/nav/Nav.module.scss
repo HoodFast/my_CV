@@ -3,18 +3,24 @@
 
 .nav {
   display: flex;
-
-  & p {
+  //
+  //
+  //& a {
+  //  @include text('Rubik', 500, 18px, 1.2);
+  //  margin: 0 15px 0;
+  //  text-decoration: none
+  //}
+  //
+  //@media screen and (max-width: 280px) {
+  //  a {
+  //    @include text('Rubik', 500, 14px, 1.2);
+  //    margin: 0 10px 0;
+  //  }
+  //}
+  //
+  a{
     @include text('Rubik', 500, 18px, 1.2);
-    margin: 0 15px 0;
-    text-decoration: none
-  }
-
-  @media screen and (max-width: 280px) {
-    p {
-      @include text('Rubik', 500, 14px, 1.2);
-      margin: 0 10px 0;
-    }
+    margin: 0 10px 0;
   }
 
   :hover {
