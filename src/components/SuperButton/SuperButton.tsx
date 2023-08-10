@@ -5,7 +5,7 @@ import React from "react";
 type ButtonPropsType = {
     titleButton: string
     disabled: boolean
-    callback: () => void
+    callback: (e:any) => void
 }
 
 export const SuperButton: React.FC<ButtonPropsType> = ({
@@ -15,10 +15,7 @@ export const SuperButton: React.FC<ButtonPropsType> = ({
                                                        }) => {
 
     return (
-
-            <button disabled={disabled} className={s.button} onClick={callback}>{titleButton}</button>
-
-
+            <button type='submit' disabled={disabled} className={s.button} onClick={callback}>{titleButton}</button>
     )
 }
 

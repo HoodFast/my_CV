@@ -1,19 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from './Nav.module.scss';
-import {Link, animateScroll as scroll} from "react-scroll";
+import {Link} from "react-scroll";
 
 
 
 export const Nav = () => {
-    const [active,setActive]=useState('main')
-    const handleClickScroll = (name:string) => {
-        setActive(name)
-        // const element = document.getElementById(name);
-        // if (element) {
-        //     element.scrollIntoView({behavior: 'smooth'});
-        //
-        // }
-    };
     const offset = -100
     return (
         <div className={s.nav}>

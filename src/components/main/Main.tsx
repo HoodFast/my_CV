@@ -8,14 +8,7 @@ import IconFont from '@ant-design/icons/lib/components/IconFont';
 import imgLayer1 from '../../assets/IMG_20200601_230751.png';
 import {IconsBlock} from "../IconsBlock/IconsBlock";
 import {TypingEffect} from "../../common/commonComponents/TypingEffect/TypingEffect";
-
-
-
-
-
-
-
-
+import {Link} from "react-scroll";
 
 
 export const Main: React.FC = () => {
@@ -42,24 +35,26 @@ export const Main: React.FC = () => {
                             Front-end программирование на Java-script – это интересная и динамичная профессия, которая
                             требует от разработчика постоянного обучения и совершенствования.
                         </p>
-                        <button>{buttonTitle}</button>
+                        <Link to="contacts" spy={true} smooth={true} >
+                            <button>{buttonTitle}</button>
+                        </Link>
+
                     </div>
                     <Space className={s.icons}>
-                        <IconFont className={s.icon}  type="icon-tuichu"/>
-                        <IconFont className={s.icon}  type="icon-facebook"/>
-                        <IconFont className={s.icon}  type="icon-twitter"/>
+                        <IconFont className={s.icon} type="icon-tuichu"/>
+                        <IconFont className={s.icon} type="icon-facebook"/>
+                        <IconFont className={s.icon} type="icon-twitter"/>
                     </Space>
                 </div>
 
 
-                {/*<div className={s.containerPhoto}>*/}
-                <div  className={s.photo}>
+                <div className={s.photo}>
                     <IconsBlock/>
-                    <div style={image1} className={s.imageStyle} >
+                    <div style={image1} className={s.imageStyle}>
 
                     </div>
                 </div>
-                {/*</div>*/}
+
 
             </div>
         </div>

@@ -12,35 +12,43 @@
 
   .contactsContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 100px;
+    //gap: 50px;
 
     .formContainer {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin: 20px;
+      margin: 35px;
       min-width: 40%;
       min-height: 45vh;
       border: 0;
       border-radius: 20px;
       background-color: $primaryColor;
-      padding: 100px 50px 50px;
-
+      padding: 50px 50px 50px;
+      @media screen and (max-width: 414px){
+        padding: 10px 10px 10px;
+      }
       .form {
         display: flex;
         flex-direction: column;
 
+        .error {
+          @include text('Rubik', 200, 20px, 1.2);
+          color: red;
+        }
+
         .input {
-          height: 53px;
-          margin: 0 0 40px;
+          height: 50px;
+          margin: 40px 0 0;
           padding: 15px;
           color: $textColor;
           background-color: $primaryColor;
           border: 0;
           position: relative;
           border-bottom: 1.5px solid #a6a6a6;
+          @include text('Rubik', 200, 24px, 1.2);
 
           &::placeholder {
             @include text('Rubik', 300, 24px, 1.2);
@@ -60,10 +68,10 @@
           border: 0;
           border-bottom: 1.5px solid #a6a6a6;
           height: 75px;
-          margin: 0 0 40px;
+          margin: 40px 0 0;
           padding: 15px;
           background-color: $primaryColor;
-
+          @include text('Rubik', 300, 24px, 1.2);
           &::placeholder {
             @include text('Rubik', 300, 24px, 1.2);
             color: $textColor;

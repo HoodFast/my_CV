@@ -6,7 +6,7 @@ import {Title} from "../../common/commonComponents/title/Title";
 import work1img from '../../assets/blog1.jpg'
 import work2img from '../../assets/blog2.jpg'
 import work3img from '../../assets/AnimalShelter.jpg'
-
+import { Fade } from "react-awesome-reveal";
 
 export const Works = () => {
     const work1 = {
@@ -23,7 +23,9 @@ export const Works = () => {
         <div id="works" className={s.worksBlock}>
             <div className={`${sc.container}   ${s.worksContainer}`}>
                 <Title title={'My Works'}/>
+
                 <div className={s.works}>
+                    <Fade  cascade={true} damping={0.05} delay={-2}>
                     <Work
                         name={'Social Network'}
                         style={work1}
@@ -43,8 +45,9 @@ export const Works = () => {
                         title={'Спасая одну жизнь вы спасаете целый мир'}
                         description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'}
                     />
-
+                    </Fade>
                 </div>
+
             </div>
         </div>
 
