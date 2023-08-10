@@ -20,7 +20,7 @@ export const Footer = () => {
                 {/*<img className={s.image} src="" alt="image3"/>*/}
                 {/*<img className={s.image} src="" alt="image4"/>*/}
             </div>
-            <p> © 2019 Все права защищены</p>
+            <p> © 2023 Все права защищены</p>
 
         </div>
 

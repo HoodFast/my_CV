@@ -5,10 +5,10 @@ import {faGithub, faInstagram, faJava, faVk, faYoutube} from "@fortawesome/free-
 export const IconsBlock = () => {
     return(
         <div className={s.iconsBlock} >
-            <FontAwesomeIcon className={s.icon} icon={faGithub}/>
-            <FontAwesomeIcon className={s.icon} icon={faYoutube}/>
-            <FontAwesomeIcon className={s.icon} icon={faVk}/>
-            <FontAwesomeIcon className={s.icon} icon={faInstagram}/>
-        </div>
+           <a target={'_blank'} href={'https://github.com/HoodFast'}><FontAwesomeIcon className={s.icon} icon={faGithub}/></a>
+            <a target={'_blank'}  href={'https://www.youtube.com/@ITINCUBATOR'}><FontAwesomeIcon  className={s.icon} icon={faYoutube}/></a>
+           <a target={'_blank'} href={'https://vk.com/id2885291'}><FontAwesomeIcon className={s.icon} icon={faVk}/></a>
+            <a target={'_blank'} href={'https://www.instagram.com/zloybaybay/'} ><FontAwesomeIcon className={s.icon} icon={faInstagram}/></a>
+</div>
     )
 }
