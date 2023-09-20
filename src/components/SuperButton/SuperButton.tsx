@@ -1,21 +1,19 @@
 import s from './SuperButton.module.scss'
-import React from "react";
+import React, {ComponentPropsWithoutRef,ElementType} from "react";
 
 
-type ButtonPropsType = {
+
+type ButtonPropsType<T extends ElementType = 'button'> = {
     titleButton: string
-    disabled: boolean
-    callback: (e:any) => void
-}
+} & ComponentPropsWithoutRef<T>
 
-export const SuperButton: React.FC<ButtonPropsType> = ({
-                                                           titleButton,
-                                                           disabled,
-                                                           callback
-                                                       }) => {
+export const SuperButton=<T extends ElementType = 'button'> (props:ButtonPropsType<T> & Omit<ComponentPropsWithoutRef<T>,keyof ButtonPropsType<T>>
+
+                                                       ) => {
+    const {titleButton, ...rest}=props
 
     return (
-            <button type='submit' disabled={disabled} className={s.button} onClick={callback}>{titleButton}</button>
+        <button className={s.button} {...rest}>{titleButton}</button>
     )
 }
 

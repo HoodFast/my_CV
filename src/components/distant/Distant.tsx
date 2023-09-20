@@ -32,8 +32,7 @@ export const Distant = () => {
                 <p>I Am Available For Freelancer</p>
 
                     <Link to="contacts" spy={true} smooth={true}>
-                        <SuperButton titleButton={'Contacts'} disabled={false} callback={() => {
-                        }}/>
+                        <SuperButton titleButton={'Contacts'} />
                     </Link>
 
 
