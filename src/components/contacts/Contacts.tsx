@@ -102,12 +102,12 @@ export const Contacts = () => {
 
 
                         {loader ? <Box sx={{display: 'flex', justifyContent: 'center'}}>
-                                <CircularProgress/>
+
+                                <CircularProgress className={s.loader}/>
                             </Box> :
                             <div className={s.button}><SuperButton
                                 titleButton={"Send me message"}
                                 type={'submit'}
-                                disabled={loader}
                                                                    /></div>}
                         <CustomizedSnackbars open={open} openError={openError} handleClose={handleClose}/>
                     </form>

@@ -33,7 +33,10 @@
       .form {
         display: flex;
         flex-direction: column;
+      .loader{
 
+         margin-top: 30px;
+        }
         .error {
           @include text('Rubik', 200, 20px, 1.2);
           color: red;
